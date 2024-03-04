@@ -24,4 +24,26 @@ export async function postsRoutes(app) {
       
     return reply.status(201).send(post)
   })
+
+  app.post('/posts/:id/comment', { onRequest: [isAuth] }, (request, reply) => {
+    const { id } = request.params
+  
+    const postIndex = posts.findIndex(post => post.id === +id)
+
+    if (postIndex === -1) {
+      return reply.status(404).send({ messsage: 'Post not found.' })
+    }
+
+    const { username, content } = request.body
+
+    const comment = {
+      owner: username,
+      content,
+      date: new Date().toISOString()
+    }
+
+    posts[postIndex].comments.push(comment)
+      
+    return reply.status(201).send(posts[postIndex])
+  })
 }
