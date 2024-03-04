@@ -5,8 +5,8 @@
   - Nome de usuário
   - Título
   - Conteúdo
-[] O usuário deve poder comentar um post
+[x] O usuário deve poder comentar um post
   - Nome de usuário
   - Conteúdo
-[] O usuário deve poder dar like em um post
+[x] O usuário deve poder dar like em um post
 [] O usuário deve poder excluir um post
