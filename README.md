@@ -1,6 +1,6 @@
 # Blog API
 
-[] O usuário deve poder listar os posts
+[x] O usuário deve poder listar os posts
 [] O usuário deve poder criar um post
   - Nome de usuário
   - Título
