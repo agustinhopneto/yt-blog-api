@@ -1,0 +1,19 @@
+{
+  "name": "blog-api",
+  "version": "0.0.0",
+  "description": "First API with Fastify.",
+  "main": "src/server.js",
+  "type": "module",
+  "author": {
+    "name": "Agustinho Neto",
+    "url": "https://github.com/agustinhopneto"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --watch ./src/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "pino-pretty": "^10.3.1"
+  }
+}
